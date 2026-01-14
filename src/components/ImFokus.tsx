@@ -1,7 +1,6 @@
-import { ChevronRightIcon } from 'lucide-react';
 import { Container } from './Container';
-import { Card, CardContent, CardFooter, CardHeader } from './ui/card';
 import { Button } from './ui/button';
+import { Card, CardContent, CardFooter, CardHeader } from './ui/card';
 
 interface Item {
   image: string;

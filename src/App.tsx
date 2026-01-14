@@ -1,7 +1,8 @@
+import { Cities } from '@/components/Cities';
 import { HeroSection } from '@/components/HeroSection';
 import { ImFokus } from '@/components/ImFokus';
 import { TopAngebotes } from '@/components/TopAngebotes';
-import { TopCategories } from './components/TopCategories';
+import { TopCategories } from '@/components/TopCategories';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <ImFokus />
 
         <TopCategories />
+
+        <Cities />
       </main>
 
       {/* <Footer /> */}
