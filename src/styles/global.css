@@ -90,6 +90,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 #root {
   min-height: 100%;
   isolation: isolate;
