@@ -11,7 +11,7 @@ interface AngebotesCardsProps {
 
 export default function AngebotesCards({ angebote }: AngebotesCardsProps) {
   return (
-    <div className="flex gap-5">
+    <div className="grid gap-5 sm:grid-cols-3">
       {angebote.map(({ title, description, icon }) => (
         <Card
           key={title}

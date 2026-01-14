@@ -81,9 +81,9 @@ const footerMenu = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-secondary pt-20">
+    <footer className="bg-secondary pt-10 sm:pt-20">
       <Container>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid gap-8 sm:grid-cols-4">
           {footerMenu.map((item) => (
             <div key={item.heading}>
               <h2 className="mb-4 text-lg font-semibold">{item.heading}</h2>
@@ -98,8 +98,8 @@ export const Footer = () => {
           ))}
         </div>
 
-        <div className="mt-12 grid grid-cols-6 gap-8 border-b-2 border-dashed border-black pb-10">
-          <div className="col-span-2 col-start-2">
+        <div className="mt-12 grid gap-8 border-b-2 border-dashed border-black pb-10 sm:grid-cols-6">
+          <div className="sm:col-span-2 sm:col-start-2">
             <h2 className="mb-4 text-center text-lg font-semibold">
               Gelbe Seiten als App
             </h2>
@@ -123,7 +123,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="col-span-2">
+          <div className="sm:col-span-2">
             <h2 className="mb-4 text-center text-lg font-semibold">
               Mehrfach ausgezeichnet
             </h2>
@@ -156,9 +156,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between py-6">
+        <div className="flex flex-wrap justify-between space-y-8 py-4 sm:py-6">
           <nav>
-            <ul className="flex gap-6">
+            <ul className="flex flex-wrap gap-x-6 gap-y-1 sm:gap-6">
               <li>
                 <a href="/">Impressum</a>
               </li>

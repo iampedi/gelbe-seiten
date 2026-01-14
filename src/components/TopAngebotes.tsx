@@ -1,5 +1,6 @@
 import { Container } from './Container';
 import AngebotesCards from './AngebotesCards';
+import React from 'react';
 
 const personalAngebote = [
   {
@@ -43,9 +44,9 @@ const firmenAngebote = [
   },
 ];
 
-export const TopAngebotes = () => {
+export const TopAngebotes = React.forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section className="py-14">
+    <section className="py-14" ref={ref}>
       <Container>
         <div>
           <h2 className="bg-primary text-primary-foreground mx-auto mb-10 w-fit px-2 text-center text-3xl font-medium">
@@ -71,4 +72,4 @@ export const TopAngebotes = () => {
       </Container>
     </section>
   );
-};
+});

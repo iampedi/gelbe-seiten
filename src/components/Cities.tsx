@@ -66,7 +66,7 @@ export const Cities = () => {
               Ihr Reiseführer für Deutschland
             </h3>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid gap-4 sm:grid-cols-3">
               {visibleItems.map((city) => (
                 <Card
                   key={city.name}

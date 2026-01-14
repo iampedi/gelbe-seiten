@@ -51,7 +51,7 @@ export const ImFokus = () => {
               Aktuelles aus <span className="font-bold">erster Hand</span>
             </h3>
 
-            <div className="flex gap-5">
+            <div className="grid gap-5 sm:grid-cols-3">
               {items.map(
                 ({ image, category, title, description, button }: Item) => (
                   <Card
