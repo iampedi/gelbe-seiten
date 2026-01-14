@@ -1,5 +1,5 @@
 import { Container } from './Container';
-import AngebotesComponent from './PersonAngebotes';
+import AngebotesCards from './AngebotesCards';
 
 const personalAngebote = [
   {
@@ -43,7 +43,7 @@ const firmenAngebote = [
   },
 ];
 
-export default function TopAngebotes() {
+export const TopAngebotes = () => {
   return (
     <section className="py-14">
       <Container>
@@ -57,7 +57,7 @@ export default function TopAngebotes() {
               Vorteile für <span className="font-bold">Sie</span>
             </h3>
 
-            <AngebotesComponent angebote={personalAngebote} />
+            <AngebotesCards angebote={personalAngebote} />
           </div>
 
           <div className="space-y-3">
@@ -65,10 +65,10 @@ export default function TopAngebotes() {
               Vorteile für <span className="font-bold">Firmen</span>
             </h3>
 
-            <AngebotesComponent angebote={firmenAngebote} />
+            <AngebotesCards angebote={firmenAngebote} />
           </div>
         </div>
       </Container>
     </section>
   );
-}
+};

@@ -84,7 +84,7 @@ export const HeroSection = () => {
             </div>
           </Container>
 
-          <MouseIcon className="absolute bottom-5 left-1/2 size-7 -translate-x-1/2 rotate-180 animate-bounce text-white/50" />
+          <MouseIcon className="absolute bottom-6 left-1/2 size-7 -translate-x-1/2 rotate-180 animate-bounce text-white/50" />
         </div>
       </div>
     </div>

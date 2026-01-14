@@ -1,7 +1,7 @@
-import { Container } from '@/components/Container';
-import { Footer } from '@/components/Footer';
 import { HeroSection } from '@/components/HeroSection';
-import TopAngebotes from '@/components/TopAngebotes';
+import { ImFokus } from '@/components/ImFokus';
+import { TopAngebotes } from '@/components/TopAngebotes';
+import { TopCategories } from './components/TopCategories';
 
 function App() {
   return (
@@ -10,6 +10,10 @@ function App() {
 
       <main>
         <TopAngebotes />
+
+        <ImFokus />
+
+        <TopCategories />
       </main>
 
       {/* <Footer /> */}
